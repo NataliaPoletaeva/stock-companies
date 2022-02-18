@@ -1,9 +1,33 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function Homecard() {
-    return (
-        <div>Homecard</div>
-    )
-}
+const Homecard = (props) => {
+  const {
+    company: {
+      id,
+      name,
+      price,
+      change,
+    },
+  } = props;
 
-export default Homecard
+  return (
+    <li>
+      {name}
+      {id}
+      {price}
+      {change}
+    </li>
+  );
+};
+
+Homecard.propTypes = {
+  company: PropTypes.shape({
+    name: PropTypes.string,
+    id: PropTypes.string,
+    price: PropTypes.number,
+    change: PropTypes.number,
+  }).isRequired,
+};
+
+export default Homecard;

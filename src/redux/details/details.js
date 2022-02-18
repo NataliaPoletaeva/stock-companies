@@ -1,7 +1,9 @@
 import Axios from 'axios';
 
 const apiKey = 'e46a1e4dcc78426940c02823ffa6c553';
-const initialState = [];
+const initialState = {
+  details: [],
+};
 
 const FETCH_DETAILS = 'finance/home/details';
 
@@ -10,19 +12,21 @@ export const fetchDetails = (payload) => ({
   payload,
 });
 
-export const fetchDetailsAPI = () => async (dispatch) => {
-  const request = await Axios.get(`https://financialmodelingprep.com/api/v3/income-statement/?limit=40&apikey=${apiKey}`);
+export const fetchDetailsAPI = (props) => async (dispatch) => {
+  const info = await Axios.get(`https://financialmodelingprep.com/api/v3/income-statement/${props.symbol}?limit=40&apikey=${apiKey}`);
+  const request = info.data;
   const details = [];
   request.map((detail) => {
     const id = detail.symbol;
+    const year = detail.calendarYear;
     const { revenue } = detail;
     const revenueCost = detail.costOfRevenue;
     const { grossProfit } = detail;
-    const researchExpenses = detail.researchAndDevelopmentExpenses;
+    const gpRatio = detail.grossProfitRatio;
     const { interestIncome } = detail;
     const { interestExpense } = detail;
     const item = {
-      id, revenue, revenueCost, grossProfit, researchExpenses, interestIncome, interestExpense,
+      id, year, revenue, revenueCost, grossProfit, gpRatio, interestIncome, interestExpense,
     };
     return details.push(item);
   });
@@ -32,7 +36,7 @@ export const fetchDetailsAPI = () => async (dispatch) => {
 const detailsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_DETAILS:
-      return action.payload;
+      return { details: action.payload };
     default:
       return state;
   }
