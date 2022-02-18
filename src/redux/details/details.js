@@ -21,10 +21,9 @@ export const fetchDetailsAPI = (props) => async (dispatch) => {
     const year = item.calendarYear;
     const { revenue } = item;
     const { grossProfit } = item;
-    const gpRatio = item.grossProfitRatio;
     const { interestIncome } = item;
     const detail = {
-      id, year, revenue, grossProfit, gpRatio, interestIncome,
+      id, year, revenue, grossProfit, interestIncome,
     };
     return details.push(detail);
   });
