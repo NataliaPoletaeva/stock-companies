@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { fetchDetailsAPI } from '../redux/details/details';
 import Detaillist from './detailComponents/Detaillist';
+import Navbar from './Navbar';
 
 const Details = () => {
   const params = useParams();
@@ -17,6 +18,7 @@ const Details = () => {
 
   return (
     <div className="detail-page">
+      <Navbar details />
       <Detaillist symbol={symbol} details={details} />
     </div>
   );

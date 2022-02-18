@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background-color: #ec4c8a;
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  width: 90%;
+  padding: 1.5rem 5%;
+  border-bottom: 2px solid #97536d;
+  box-shadow: 2px 2px 2px 2px #e6216c;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+}
+
+.logo {
+  width: 50%;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.card-title,
+.card-prices {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+}
+
+.image {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.search-bar {
+  width: 85%;
+  margin: 1rem auto;
+}
+
+.search-input {
+  width: 85%;
+  border: 1px solid #ffc0d8;
+  border-radius: 0.25rem;
+  height: 1.75rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.search-input::placeholder {
+  font-size: 1rem;
+}
+
+.search-btn {
+  all: unset;
+}
+
+svg {
+  padding-left: 0.5rem;
+}
+
+.card-title {
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+.card-prices {
+  align-items: flex-end;
+  font-size: 1.2rem;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.id-symbol {
+  box-sizing: border-box;
+  padding: 0.25rem;
+  background-color: #ffc0d8;
+  border-radius: 10%;
+  color: #ec4c8a;
+}
+
+div {
+  margin: 0;
+}
+
+.changes {
+  font-style: italic;
+}
+
+.cardlist {
+  list-style: none;
+  padding: 0;
+}
+
+.home-card {
+  width: 90%;
+  padding: 0.5rem;
+  height: 6rem;
+  margin: 1rem auto 0 auto;
+  background-color: #fa6aa1;
+  border-radius: 0.25rem;
+}
+
+.home-card > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}

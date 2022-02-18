@@ -18,6 +18,7 @@ const Detaillist = (props) => {
 
 Detaillist.propTypes = {
   id: PropTypes.string,
+  name: PropTypes.string,
   details: PropTypes.array,
 }.isRequired;
 

@@ -13,22 +13,20 @@ export const fetchDetails = (payload) => ({
 });
 
 export const fetchDetailsAPI = (props) => async (dispatch) => {
-  const info = await Axios.get(`https://financialmodelingprep.com/api/v3/income-statement/${props.symbol}?limit=40&apikey=${apiKey}`);
+  const info = await Axios.get(`https://financialmodelingprep.com/api/v3/income-statement/${props.symbol}?limit=120&apikey=${apiKey}`);
   const request = info.data;
   const details = [];
-  request.map((detail) => {
-    const id = detail.symbol;
-    const year = detail.calendarYear;
-    const { revenue } = detail;
-    const revenueCost = detail.costOfRevenue;
-    const { grossProfit } = detail;
-    const gpRatio = detail.grossProfitRatio;
-    const { interestIncome } = detail;
-    const { interestExpense } = detail;
-    const item = {
-      id, year, revenue, revenueCost, grossProfit, gpRatio, interestIncome, interestExpense,
+  request.map((item) => {
+    const id = item.symbol;
+    const year = item.calendarYear;
+    const { revenue } = item;
+    const { grossProfit } = item;
+    const gpRatio = item.grossProfitRatio;
+    const { interestIncome } = item;
+    const detail = {
+      id, year, revenue, grossProfit, gpRatio, interestIncome,
     };
-    return details.push(item);
+    return details.push(detail);
   });
   dispatch(fetchDetails(details));
 };
