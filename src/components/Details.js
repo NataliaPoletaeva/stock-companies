@@ -18,8 +18,11 @@ const Details = () => {
 
   return (
     <div className="detail-page">
-      <Navbar details />
-      <Detaillist symbol={symbol} details={details} />
+      <Navbar details symbol={symbol} />
+      <p className="symbol">
+        {symbol}
+      </p>
+      <Detaillist details={details} />
     </div>
   );
 };
