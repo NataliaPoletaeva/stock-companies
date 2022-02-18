@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Stocks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This web-page allows user to inspect the dynamic in the prices of big companies' shares, and see more details about each company. This is a Single Page Application. The project involves using [Financial Modeling Prep API](https://site.financialmodelingprep.com/), which stores fetched information. The project is built with React&Redux.
 
-## Available Scripts
+![](https://user-images.githubusercontent.com/91270103/154735828-fc2b62f5-d961-41b1-a58f-5959f3ebca4d.png)
+![](https://user-images.githubusercontent.com/91270103/154735886-4ccc6262-0b21-4c4f-93bb-af1f69b5d2a1.png)
+![](https://user-images.githubusercontent.com/91270103/154735936-ccbe3fb6-fa11-4ebb-8a7f-52b8e5170f18.png)
+![](https://user-images.githubusercontent.com/91270103/154736012-82a0bf2c-8e60-4246-a542-150bcca83def.png)
 
-In the project directory, you can run:
+## 🏗️ Built With
 
-### `npm start`
+- HTML/CSS
+- React&Redux
+- API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖇️ LiveLink
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Live demo here](https://reverent-einstein-e10bb1.netlify.app/)
 
-### `npm test`
+## 🛫 Getting Started
+To get a local copy up and running, follow the steps in Setup below.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+Basic knowledge of HTML, CSS, and JavaScript.
 
-### `npm run build`
+### Setup
+If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
+[Download the ZIP from this location](https://github.com/NataliaPoletaeva/space-travelers), or run the following [git](https://github.com/NataliaPoletaeva/space-travelers.git) command to clone the files to your machine:
+```bash
+git clone https://github.com/NataliaPoletaeva/stock-companies.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Once the files are on your machine, open the _stock-companies_ folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Installation & Set Up
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install Node Modules
 
-### `npm run eject`
+   ```sh
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Start the development server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```sh
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧪 Running Tests with Jest
 
-## Learn More
+1. Start the development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```sh
+   npm run test
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 💉 Install
 
-### Code Splitting
+The following tools help make easier to work with sample code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [git](https://git-scm.com/downloads): A tool for managing source code
+- [Visual Studio Code](https://code.visualstudio.com/): A source code editor
+- [NVM](https://github.com/nvm-sh/nvm)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👨🏾‍💻👩🏻‍💻 Authors
 
-### Making a Progressive Web App
+👤 **Natalia Poletaeva** 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [NataliaPoletaeva](https://github.com/NataliaPoletaeva)
+- LinkedIn: [Natalia Poletaeva](https://www.linkedin.com/in/natalia-poletaeva-b9a5b0222/)
+- Twitter: [@Fly_Meets](https://twitter.com/Fly_Meets)
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions, issues, and feature requests are welcome!
 
-### Deployment
+## ❤️ Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Give a ⭐️ if you like this project!
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Thank you for Microverse for providing the required materials
+- Thanks to [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for the [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+
+## 📝 License
+
+This project is [MIT](https://github.com/NataliaPoletaeva/Javascript-Capstone-Kanban/blob/main/LICENSE) licensed.
